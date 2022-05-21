@@ -1,0 +1,19 @@
+{
+  "name": "budget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "format": "lerna run format",
+    "lint": "lerna run lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "lerna": "^4.0.0"
+  }
+}

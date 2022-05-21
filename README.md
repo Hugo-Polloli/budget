@@ -1,7 +1,9 @@
 ### Tools
 
-NodeJS version : `16.X`  
-Install pnpm : `npm install -g pnpm`
+NodeJS version : `16.X`
+Install pnpm : `npm install -g pnpm`  
+`pnpm i`  
+`pnpm run prepare`  
 
 ### VSCode extensions :
 

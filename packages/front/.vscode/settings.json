@@ -25,4 +25,7 @@
   "less.validate": false,
   "scss.validate": false,
   "files.insertFinalNewline": true,
+  "files.exclude": {
+    "**/.git": false
+  }
 }

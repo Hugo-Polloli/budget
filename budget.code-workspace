@@ -1,0 +1,19 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "packages/front"
+    },
+    {
+    	"path": "packages/server"
+    }
+  ],
+  "settings": {
+    // So that they don't show up 2 times in the sidebar explorer and STS contains only non duplicated files/folders
+    "files.exclude": {
+      "packages": true,
+    }
+  }
+}
