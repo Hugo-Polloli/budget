@@ -7,13 +7,16 @@
       "path": "packages/front"
     },
     {
-    	"path": "packages/server"
+      "path": "packages/server"
+    },
+    {
+      "path": "packages/models"
     }
   ],
   "settings": {
     // So that they don't show up 2 times in the sidebar explorer and STS contains only non duplicated files/folders
     "files.exclude": {
-      "packages": true,
+      "packages": true
     }
   }
 }
