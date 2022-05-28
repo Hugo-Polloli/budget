@@ -11,18 +11,30 @@ datasource db {
 }
 
 model User {
-  id              Int               @id @default(autoincrement())
-  lastName        String
-  firstName       String
-  email           String            @unique
-  phone           String
-  password        String
-  role            Role              @default(USER)
-  createdAt       DateTime          @default(now())
-  updatedAt       DateTime          @updatedAt
+  id             Int              @id @default(autoincrement())
+  lastName       String
+  firstName      String
+  email          String           @unique
+  phone          String
+  password       String
+  role           Role             @default(USER)
+  createdAt      DateTime         @default(now())
+  updatedAt      DateTime         @updatedAt
+  BankConnection BankConnection[]
 }
 
 enum Role {
   USER
   ADMIN
+}
+
+model BankConnection {
+  id              Int      @id @default(autoincrement())
+  user            User     @relation(fields: [userId], references: [id])
+  userId          Int
+  bankName        String
+  bankAccountName String // lol
+  bankPassword    String // lol
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
 }

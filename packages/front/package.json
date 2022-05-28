@@ -1,5 +1,5 @@
 {
-  "name": "front",
+  "name": "@budget/front",
   "version": "0.0.1",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
@@ -11,7 +11,7 @@
     "test": "playwright test",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-    "lint": "npx stylelint --ignore-path .gitignore \"**/*.css\" && prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+    "lint": "pnpx stylelint --ignore-path .gitignore \"**/*.css\" && prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
     "format": "prettier --ignore-path .gitignore --loglevel warn --write --plugin-search-dir=. ."
   },
   "devDependencies": {

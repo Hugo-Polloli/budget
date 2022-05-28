@@ -24,5 +24,8 @@
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
-  "files.insertFinalNewline": true
+  "files.insertFinalNewline": true,
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  }
 }

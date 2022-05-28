@@ -6,14 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "format": "lerna run format",
-    "lint": "lerna run lint"
+    "all-install": "pnpm recursive install",
+    "dev": "pnpm recursive run dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "husky": "^8.0.1",
-    "lerna": "^4.0.0"
+    "husky": "^8.0.0"
   }
 }
